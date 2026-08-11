@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f4f8;
+  color: #1f2937;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #2563eb;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+
+.campo label {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #4b5563;
+}
+
+input[type="text"] {
+  padding: 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+#contenedor-materias {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* TARJETA DE CADA MATERIA (usar esta clase desde el template string) */
+.materia-card {
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #9ca3af;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Estado visual: materia aprobada */
+.materia-card.aprobada {
+  border-left-color: #16a34a;
+  background-color: #f0fdf4;
+}
+
+/* Estado visual: materia no aprobada */
+.materia-card.no-aprobada {
+  border-left-color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.materia-card h3 {
+  margin-bottom: 0.3rem;
+}
+
+.materia-card p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.materia-card .estado {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.materia-card.aprobada .estado {
+  background-color: #16a34a;
+  color: white;
+}
+
+.materia-card.no-aprobada .estado {
+  background-color: #dc2626;
+  color: white;
+}

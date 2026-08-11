@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preentrega 7</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Simulador de Materias</h1>
+  </header>
+
+  <main>
+    <section id="formulario">
+      <h2>Agregar nueva materia</h2>
+
+      <div class="campo">
+        <label for="input-nombre">Nombre</label>
+        <input type="text" id="input-nombre" placeholder="Ej: Programación 3">
+      </div>
+
+      <div class="campo">
+        <label for="input-profesor">Profesor</label>
+        <input type="text" id="input-profesor" placeholder="Ej: prof. Juan Pérez">
+      </div>
+
+      <div class="campo">
+        <label for="input-cuatrimestre">Cuatrimestre</label>
+        <input type="text" id="input-cuatrimestre" placeholder="Ej: 1C 2026">
+      </div>
+
+      <button id="btn-agregar">Agregar Materia</button>
+    </section>
+
+    <section id="busqueda">
+      <label for="input-buscar">Buscar materia por nombre</label>
+      <input type="text" id="input-buscar" placeholder="Escribí para buscar...">
+    </section>
+
+    <section id="listado">
+      <h2>Materias</h2>
+      <div id="contenedor-materias">
+        
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
